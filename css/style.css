@@ -4,7 +4,7 @@
     --red: #D21514;
     --green: #008C7F;
     --light-color: #777;
-    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --box-shadow: .3rem .2rem 1rem rgba(22, 160, 133, .2);
 }
 
 * {
@@ -28,15 +28,16 @@ html {
 
 section {
     padding: 2rem 9%;
+    background: #f5feff;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
     background: #fff6f6;
 }
 
 section:nth-child(odd) {
     background: #f5feff;
-}
+} */
 
 .heading {
     text-align: center;
@@ -261,32 +262,31 @@ section:nth-child(odd) {
 
 .doctors .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .doctors .box-container .box {
+    
     text-align: center;
     background: #fff;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    padding: 2rem;
 }
 
 .doctors .box-container .box img {
-    height: 20rem;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
 }
 
 .doctors .box-container .box h3 {
-    color: var(--green);
+    color: var(--light-color);
     font-size: 2.5rem;
 }
 
 .doctors .box-container .box span {
-    color: var(--red);
+    color: var(--light-color);
     font-size: 1.5rem;
 }
 
@@ -299,7 +299,7 @@ section:nth-child(odd) {
     width: 5rem;
     line-height: 4.5rem;
     font-size: 2rem;
-    color: var(--red);
+    color: var(--light-color);
     border-radius: .5rem;
     margin: .3rem;
 }
