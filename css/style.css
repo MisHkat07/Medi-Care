@@ -18,7 +18,9 @@
     transition: all .2s ease-out;
     text-decoration: none;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -275,7 +277,7 @@ section:nth-child(odd) {
 }
 
 .doctors .box-container .box img {
-    width: 200px;
+    width: 250px;
     object-fit: cover;
     margin: 10px;
 }
